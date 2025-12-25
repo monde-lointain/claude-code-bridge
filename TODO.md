@@ -175,12 +175,12 @@
   - [x] `getDiff`: Enforces `max_diff_size_bytes`.
   - [x] Returns truncated flag if size exceeded.
 
-#### P3-006: Git Service Tests
+#### P3-006: Git Service Tests ✓
 - **Files**: `tests/unit/services/git.service.test.ts`
 - **Acceptance Criteria**:
-  - [ ] Mock `execSync` to return sample git outputs.
-  - [ ] Verify parsing logic for status/stats.
-  - [ ] Verify truncation logic.
+  - [x] Mock `execSync` to return sample git outputs.
+  - [x] Verify parsing logic for status/stats.
+  - [x] Verify truncation logic.
 
 ### Parallel Group C: Logging Service
 #### P3-007: Logger Service
