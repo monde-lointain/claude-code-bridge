@@ -108,11 +108,11 @@
   - [x] `isBinaryFile` correctly identifies null bytes in first 8KB.
   - [x] `stripAnsi` removes colors and cursor codes.
 
-#### P2-004: Content Utility Tests
+#### P2-004: Content Utility Tests ✓
 - **Files**: `tests/unit/utils/ansi.test.ts`, `tests/unit/utils/binary-detector.test.ts`
 - **Acceptance Criteria**:
-  - [ ] Verify text files pass binary check.
-  - [ ] Verify ANSI codes are removed from mixed strings.
+  - [x] Verify text files pass binary check.
+  - [x] Verify ANSI codes are removed from mixed strings.
 
 ### Parallel Group C: Git & ID Helpers
 #### P2-005: Gitignore Parser & ID Generator
