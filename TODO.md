@@ -26,13 +26,13 @@
   - [x] `.gitignore` includes `node_modules`, `dist`, `.env`, `.claude/mcp-logs`.
 - **Dependencies**: None
 
-### P1-002: TypeScript & Test Config
+### P1-002: TypeScript & Test Config ✓
 - **Description**: Configure TypeScript and Vitest environments.
 - **Files**: `tsconfig.json`, `vitest.config.ts`, `.eslintrc.json`, `.prettierrc`
 - **Acceptance Criteria**:
-  - [ ] `tsconfig.json` matches Spec 17.2 (ES2022, NodeNext, Strict).
-  - [ ] `vitest.config.ts` matches Spec 17.3.
-  - [ ] Linting (`npm run lint`) and formatting (`npm run format`) scripts work.
+  - [x] `tsconfig.json` matches Spec 17.2 (ES2022, NodeNext, Strict).
+  - [x] `vitest.config.ts` matches Spec 17.3.
+  - [x] Linting (`npm run lint`) and formatting (`npm run format`) scripts work.
 - **Dependencies**: P1-001
 
 ### P1-003: Directory Structure
