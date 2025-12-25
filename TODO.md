@@ -101,12 +101,12 @@
   - [x] Test exact match and subdirectory match.
 
 ### Parallel Group B: Content Handling
-#### P2-003: Binary & ANSI Utilities
+#### P2-003: Binary & ANSI Utilities ✓
 - **Description**: Implement binary file detection and ANSI stripping.
 - **Files**: `src/utils/ansi.ts`, `src/utils/binary-detector.ts`
 - **Acceptance Criteria**:
-  - [ ] `isBinaryFile` correctly identifies null bytes in first 8KB.
-  - [ ] `stripAnsi` removes colors and cursor codes.
+  - [x] `isBinaryFile` correctly identifies null bytes in first 8KB.
+  - [x] `stripAnsi` removes colors and cursor codes.
 
 #### P2-004: Content Utility Tests
 - **Files**: `tests/unit/utils/ansi.test.ts`, `tests/unit/utils/binary-detector.test.ts`
