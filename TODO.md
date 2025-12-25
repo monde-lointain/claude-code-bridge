@@ -86,13 +86,13 @@
 *Goal: Build the low-level helpers required by the services.*
 
 ### Parallel Group A: Security & Validation
-#### P2-001: Path Security Utility
+#### P2-001: Path Security Utility ✓
 - **Description**: Implement strict path whitelisting.
 - **Files**: `src/utils/path-security.ts`
 - **Acceptance Criteria**:
-  - [ ] Expands `~` to user home.
-  - [ ] `validate(path)` throws `PathSecurityError` if outside `allowed_roots`.
-  - [ ] Resolves relative paths before checking.
+  - [x] Expands `~` to user home.
+  - [x] `validate(path)` throws `PathSecurityError` if outside `allowed_roots`.
+  - [x] Resolves relative paths before checking.
 
 #### P2-002: Path Security Tests
 - **Files**: `tests/unit/utils/path-security.test.ts`
