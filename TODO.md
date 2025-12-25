@@ -62,13 +62,13 @@
   - [x] `handleError` utility returns structured JSON `ErrorResponse`.
 - **Dependencies**: P1-004
 
-### P1-006: Configuration System
+### P1-006: Configuration System ✓
 - **Description**: Implement Zod schema, defaults, and the config loader.
 - **Files**: `src/config/{schema.ts, defaults.ts, loader.ts, index.ts}`
 - **Acceptance Criteria**:
-  - [ ] Zod schema implements all validation rules from Spec 4.2.
-  - [ ] `ConfigLoader` prioritizes: Env Vars > File > Defaults.
-  - [ ] `validateAllowedRoots` warns (doesn't crash) on missing directories.
+  - [x] Zod schema implements all validation rules from Spec 4.2.
+  - [x] `ConfigLoader` prioritizes: Env Vars > File > Defaults.
+  - [x] `validateAllowedRoots` warns (doesn't crash) on missing directories.
 - **Dependencies**: P1-004
 
 ### P1-007: Config Loader Tests
