@@ -94,11 +94,11 @@
   - [x] `validate(path)` throws `PathSecurityError` if outside `allowed_roots`.
   - [x] Resolves relative paths before checking.
 
-#### P2-002: Path Security Tests
+#### P2-002: Path Security Tests ✓
 - **Files**: `tests/unit/utils/path-security.test.ts`
 - **Acceptance Criteria**:
-  - [ ] Test path traversal attempts (`../`).
-  - [ ] Test exact match and subdirectory match.
+  - [x] Test path traversal attempts (`../`).
+  - [x] Test exact match and subdirectory match.
 
 ### Parallel Group B: Content Handling
 #### P2-003: Binary & ANSI Utilities
