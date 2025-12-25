@@ -151,13 +151,13 @@
   - [x] `writeFile`: Creates parent dirs if missing.
   - [x] `initGitRepo`: Idempotent (checks for existing .git).
 
-#### P3-003: Filesystem Service Tests
+#### P3-003: Filesystem Service Tests ✓
 - **Description**: Comprehensive tests for FS service.
 - **Files**: `tests/unit/services/filesystem.service.test.ts`, `tests/fixtures/sample-project/`
 - **Acceptance Criteria**:
-  - [ ] Setup `tests/fixtures/sample-project` with binary, large text, and ignored files.
-  - [ ] Test read restrictions (binary/security).
-  - [ ] Test write operations success states.
+  - [x] Setup `tests/fixtures/sample-project` with binary, large text, and ignored files.
+  - [x] Test read restrictions (binary/security).
+  - [x] Test write operations success states.
 
 ### Parallel Group B: Git Service
 #### P3-004: Git Service (Status & Stat)
