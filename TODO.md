@@ -35,12 +35,12 @@
   - [x] Linting (`npm run lint`) and formatting (`npm run format`) scripts work.
 - **Dependencies**: P1-001
 
-### P1-003: Directory Structure
+### P1-003: Directory Structure ✓
 - **Description**: Create the complete directory tree.
 - **Files**: `src/{config,tools,resources,services,utils,types}`, `tests/{unit,integration,mocks,fixtures}`
 - **Acceptance Criteria**:
-  - [ ] All directories from Spec Section 3 exist.
-  - [ ] Empty `index.ts` files created in each `src` subdirectory to allow imports.
+  - [x] All directories from Spec Section 3 exist.
+  - [x] Empty `index.ts` files created in each `src` subdirectory to allow imports.
 - **Dependencies**: P1-001
 
 ### P1-004: Type Definitions (Shared)
