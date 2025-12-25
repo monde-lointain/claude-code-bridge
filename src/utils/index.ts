@@ -1,2 +1,2 @@
 // Barrel exports for utils
-export {};
+export * from './error-handler.js';

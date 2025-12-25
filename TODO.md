@@ -53,13 +53,13 @@
   - [x] Config interface defined.
 - **Dependencies**: P1-003
 
-### P1-005: Error System
+### P1-005: Error System ✓
 - **Description**: Define custom error types early so Services can use them immediately.
 - **Files**: `src/types/errors.ts`, `src/utils/error-handler.ts`
 - **Acceptance Criteria**:
-  - [ ] `McpBridgeError` base class implemented.
-  - [ ] Specific errors: `PathSecurityError`, `TaskNotFoundError`, `BinaryFileError`, `GitError` implemented.
-  - [ ] `handleError` utility returns structured JSON `ErrorResponse`.
+  - [x] `McpBridgeError` base class implemented.
+  - [x] Specific errors: `PathSecurityError`, `TaskNotFoundError`, `BinaryFileError`, `GitError` implemented.
+  - [x] `handleError` utility returns structured JSON `ErrorResponse`.
 - **Dependencies**: P1-004
 
 ### P1-006: Configuration System
