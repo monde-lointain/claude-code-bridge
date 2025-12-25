@@ -94,12 +94,18 @@ export interface GitStatusInput {
 
 export interface GitStatusOutput {
   path: string;
-  status: string;
+  clean: boolean;
+  branch: string;
+  ahead: number;
+  behind: number;
+  staged: string[];
+  modified: string[];
+  untracked: string[];
 }
 
 export interface GitDiffStatInput {
   path: string;
-  ref?: string;
+  cached?: boolean;
 }
 
 export interface GitDiffFileStat {
@@ -111,18 +117,17 @@ export interface GitDiffFileStat {
 export interface GitDiffStatOutput {
   path: string;
   files: GitDiffFileStat[];
-  total_insertions: number;
-  total_deletions: number;
+  summary: string;
 }
 
 export interface GitDiffInput {
   path: string;
-  ref?: string;
-  file?: string;
+  cached?: boolean;
 }
 
 export interface GitDiffOutput {
   path: string;
   diff: string;
-  is_truncated: boolean;
+  truncated: boolean;
+  message: string;
 }

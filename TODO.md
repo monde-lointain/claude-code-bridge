@@ -160,20 +160,20 @@
   - [x] Test write operations success states.
 
 ### Parallel Group B: Git Service
-#### P3-004: Git Service (Status & Stat)
+#### P3-004: Git Service (Status & Stat) ✓
 - **Description**: Implement status and stats retrieval.
 - **Files**: `src/services/git.service.ts` (Part 1)
 - **Acceptance Criteria**:
-  - [ ] `isGitRepo`: Returns false gracefully.
-  - [ ] `getStatus`: Parses porcelain output into structured object.
-  - [ ] `getDiffStat`: Parses `--stat` output.
+  - [x] `isGitRepo`: Returns false gracefully.
+  - [x] `getStatus`: Parses porcelain output into structured object.
+  - [x] `getDiffStat`: Parses `--stat` output.
 
-#### P3-005: Git Service (Diff)
+#### P3-005: Git Service (Diff) ✓
 - **Description**: Implement full diff with safety limits.
 - **Files**: `src/services/git.service.ts` (Part 2)
 - **Acceptance Criteria**:
-  - [ ] `getDiff`: Enforces `max_diff_size_bytes`.
-  - [ ] Returns truncated flag if size exceeded.
+  - [x] `getDiff`: Enforces `max_diff_size_bytes`.
+  - [x] Returns truncated flag if size exceeded.
 
 #### P3-006: Git Service Tests
 - **Files**: `tests/unit/services/git.service.test.ts`
