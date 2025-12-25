@@ -122,11 +122,11 @@
   - [x] `generateTaskId` produces `task_<hex>` format.
   - [x] `GitignoreParser` respects root `.gitignore` and default ignores (`node_modules`).
 
-#### P2-006: Gitignore & ID Tests
+#### P2-006: Gitignore & ID Tests ✓
 - **Files**: `tests/unit/utils/gitignore-parser.test.ts`
 - **Acceptance Criteria**:
-  - [ ] Test that `node_modules` is always ignored.
-  - [ ] Test file-specific ignore rules.
+  - [x] Test that `node_modules` is always ignored.
+  - [x] Test file-specific ignore rules.
 
 ---
 
