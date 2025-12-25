@@ -71,13 +71,13 @@
   - [x] `validateAllowedRoots` warns (doesn't crash) on missing directories.
 - **Dependencies**: P1-004
 
-### P1-007: Config Loader Tests
+### P1-007: Config Loader Tests ✓
 - **Description**: Unit tests for configuration logic.
 - **Files**: `tests/unit/config/loader.test.ts`
 - **Acceptance Criteria**:
-  - [ ] Test env var overrides.
-  - [ ] Test invalid schema throws error.
-  - [ ] Test default values fallback.
+  - [x] Test env var overrides.
+  - [x] Test invalid schema throws error.
+  - [x] Test default values fallback.
 - **Dependencies**: P1-006
 
 ---
