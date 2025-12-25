@@ -43,14 +43,14 @@
   - [x] Empty `index.ts` files created in each `src` subdirectory to allow imports.
 - **Dependencies**: P1-001
 
-### P1-004: Type Definitions (Shared)
+### P1-004: Type Definitions (Shared) ✓
 - **Description**: Define core interfaces used across the app to prevent circular dependency issues later.
 - **Files**: `src/types/{index.ts, task.types.ts, tool.types.ts, resource.types.ts, config.types.ts}`
 - **Acceptance Criteria**:
-  - [ ] `Task`, `TaskStatus`, `PermissionMode` interfaces defined.
-  - [ ] Tool input/output interfaces (FS, Git, Project) defined.
-  - [ ] Resource interfaces defined.
-  - [ ] Config interface defined.
+  - [x] `Task`, `TaskStatus`, `PermissionMode` interfaces defined.
+  - [x] Tool input/output interfaces (FS, Git, Project) defined.
+  - [x] Resource interfaces defined.
+  - [x] Config interface defined.
 - **Dependencies**: P1-003
 
 ### P1-005: Error System
