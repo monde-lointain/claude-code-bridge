@@ -115,12 +115,12 @@
   - [x] Verify ANSI codes are removed from mixed strings.
 
 ### Parallel Group C: Git & ID Helpers
-#### P2-005: Gitignore Parser & ID Generator
+#### P2-005: Gitignore Parser & ID Generator ✓
 - **Description**: Parse .gitignore files and generate Task IDs.
 - **Files**: `src/utils/gitignore-parser.ts`, `src/utils/id-generator.ts`
 - **Acceptance Criteria**:
-  - [ ] `generateTaskId` produces `task_<hex>` format.
-  - [ ] `GitignoreParser` respects root `.gitignore` and default ignores (`node_modules`).
+  - [x] `generateTaskId` produces `task_<hex>` format.
+  - [x] `GitignoreParser` respects root `.gitignore` and default ignores (`node_modules`).
 
 #### P2-006: Gitignore & ID Tests
 - **Files**: `tests/unit/utils/gitignore-parser.test.ts`
