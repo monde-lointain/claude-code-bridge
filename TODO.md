@@ -134,22 +134,22 @@
 *Goal: Implement the heavy lifting logic. Note: Error Handling (P1-005) is now available.*
 
 ### Parallel Group A: Filesystem Service
-#### P3-001: Filesystem Service (Read Operations)
+#### P3-001: Filesystem Service (Read Operations) ✓
 - **Description**: Implement safe reading and listing.
 - **Files**: `src/services/filesystem.service.ts` (Part 1)
 - **Acceptance Criteria**:
-  - [ ] `listFiles`: Uses `PathSecurity`, respects `GitignoreParser`, sorts output.
-  - [ ] `readFile`: Uses `BinaryDetector`, enforces 1MB limit (truncates).
-  - [ ] `readFileRange`: Clamps line numbers, handles out-of-bounds.
-  - [ ] `getFileTree`: Generates ASCII tree respecting depth.
+  - [x] `listFiles`: Uses `PathSecurity`, respects `GitignoreParser`, sorts output.
+  - [x] `readFile`: Uses `BinaryDetector`, enforces 1MB limit (truncates).
+  - [x] `readFileRange`: Clamps line numbers, handles out-of-bounds.
+  - [x] `getFileTree`: Generates ASCII tree respecting depth.
 
-#### P3-002: Filesystem Service (Write Operations)
+#### P3-002: Filesystem Service (Write Operations) ✓
 - **Description**: Implement modification methods.
 - **Files**: `src/services/filesystem.service.ts` (Part 2)
 - **Acceptance Criteria**:
-  - [ ] `createDirectory`: `mkdir -p` behavior.
-  - [ ] `writeFile`: Creates parent dirs if missing.
-  - [ ] `initGitRepo`: Idempotent (checks for existing .git).
+  - [x] `createDirectory`: `mkdir -p` behavior.
+  - [x] `writeFile`: Creates parent dirs if missing.
+  - [x] `initGitRepo`: Idempotent (checks for existing .git).
 
 #### P3-003: Filesystem Service Tests
 - **Description**: Comprehensive tests for FS service.

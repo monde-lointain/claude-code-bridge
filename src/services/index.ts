@@ -1,2 +1,2 @@
 // Barrel exports for services
-export {};
+export * from './filesystem.service.js';
