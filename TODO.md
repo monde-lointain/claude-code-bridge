@@ -244,12 +244,12 @@
   - [x] Timeout logic: kills task if `timeout_seconds` exceeded.
   - [x] `getTaskStatus`: Generates user-friendly hints based on runtime.
 
-### P4-007: Task Manager Tests
+### P4-007: Task Manager Tests ✓
 - **Files**: `tests/unit/services/task-manager.test.ts`
 - **Acceptance Criteria**:
-  - [ ] Test project locking prevents duplicate tasks.
-  - [ ] Test timeout kills task.
-  - [ ] Test status transitions (pending -> running -> completed).
+  - [x] Test project locking prevents duplicate tasks.
+  - [x] Test timeout kills task.
+  - [x] Test status transitions (pending -> running -> completed).
 
 ---
 
