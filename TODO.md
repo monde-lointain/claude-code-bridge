@@ -257,60 +257,60 @@
 *Goal: Expose the services via the Model Context Protocol.*
 
 ### Parallel Group A: Task Tools
-#### P5-001: Task Tool Handlers
+#### P5-001: Task Tool Handlers ✓
 - **Description**: Expose TaskManager methods.
 - **Files**: `src/tools/task.tools.ts`
 - **Acceptance Criteria**:
-  - [ ] `start_task`: Returns task_id immediately.
-  - [ ] `get_task_status`: Returns structured status + hint.
-  - [ ] `kill_task`: Handles non-existent/already-stopped tasks gracefully.
+  - [x] `start_task`: Returns task_id immediately.
+  - [x] `get_task_status`: Returns structured status + hint.
+  - [x] `kill_task`: Handles non-existent/already-stopped tasks gracefully.
 
 ### Parallel Group B: Project & FS Tools
-#### P5-002: Filesystem Tool Handlers
+#### P5-002: Filesystem Tool Handlers ✓
 - **Description**: Expose FilesystemService methods.
 - **Files**: `src/tools/filesystem.tools.ts`
 - **Acceptance Criteria**:
-  - [ ] `list_files`, `read_file` mapped correctly.
-  - [ ] Default depth applied from config.
+  - [x] `list_files`, `read_file` mapped correctly.
+  - [x] Default depth applied from config.
 
-#### P5-003: Project Tool Handlers
+#### P5-003: Project Tool Handlers ✓
 - **Description**: Expose Project methods.
 - **Files**: `src/tools/project.tools.ts`
 - **Acceptance Criteria**:
-  - [ ] `set_active_project`: Validates path via FilesystemService.
-  - [ ] `create_directory`, `write_file`, `init_git_repo` exposed.
+  - [x] `set_active_project`: Validates path via FilesystemService.
+  - [x] `create_directory`, `write_file`, `init_git_repo` exposed.
 
 ### Parallel Group C: Git Tools & Resources
-#### P5-004: Git Tool Handlers
+#### P5-004: Git Tool Handlers ✓
 - **Description**: Expose GitService methods.
 - **Files**: `src/tools/git.tools.ts`
 - **Acceptance Criteria**:
-  - [ ] `git_status`, `git_diff`, `git_diff_stat` exposed.
-  - [ ] `cached` flag supported.
+  - [x] `git_status`, `git_diff`, `git_diff_stat` exposed.
+  - [x] `cached` flag supported.
 
-#### P5-005: Resource Handlers
+#### P5-005: Resource Handlers ✓
 - **Description**: Implement MCP Resources.
 - **Files**: `src/resources/index.ts`
 - **Acceptance Criteria**:
-  - [ ] `logs://{task_id}`: Reads log file, strips ANSI.
-  - [ ] `tasks://active`: Lists running tasks.
-  - [ ] `config://current`: Returns sanitized config.
+  - [x] `logs://{task_id}`: Reads log file, strips ANSI.
+  - [x] `tasks://active`: Lists running tasks.
+  - [x] `config://current`: Returns sanitized config.
 
 ### Parallel Group D: Server & Registry
-#### P5-006: Tool Registry
+#### P5-006: Tool Registry ✓
 - **Description**: Central router for tool calls.
 - **Files**: `src/tools/index.ts`
 - **Acceptance Criteria**:
-  - [ ] `registerTools`: Aggregates all tool arrays.
-  - [ ] `handleToolCall`: Routes based on tool name string.
+  - [x] `registerTools`: Aggregates all tool arrays.
+  - [x] `handleToolCall`: Routes based on tool name string.
 
-#### P5-007: Server Entry Point
+#### P5-007: Server Entry Point ✓
 - **Description**: Bootstrapping the MCP server.
 - **Files**: `src/server.ts`, `src/index.ts`
 - **Acceptance Criteria**:
-  - [ ] Initializes all services (Task, FS, Git, Logger).
-  - [ ] Connects StdioTransport.
-  - [ ] Handles SIGINT/SIGTERM for graceful shutdown (kills child PTYs).
+  - [x] Initializes all services (Task, FS, Git, Logger).
+  - [x] Connects StdioTransport.
+  - [x] Handles SIGINT/SIGTERM for graceful shutdown (kills child PTYs).
 
 ---
 
