@@ -13,6 +13,7 @@
     "dev": "tsx src/index.ts",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
+    "test:live": "tsx scripts/test-live.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "format": "prettier --write src/"

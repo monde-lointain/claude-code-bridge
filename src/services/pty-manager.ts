@@ -22,7 +22,8 @@ export interface PtyManagerEvents {
   'error': (sessionId: string, error: Error) => void;
 }
 
-export declare interface PtyManager {
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
+export interface PtyManager {
   on<U extends keyof PtyManagerEvents>(
     event: U,
     listener: PtyManagerEvents[U]
@@ -33,6 +34,7 @@ export declare interface PtyManager {
   ): boolean;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export class PtyManager extends EventEmitter {
   private sessions: Map<string, PtySession> = new Map();
   private config: Config;

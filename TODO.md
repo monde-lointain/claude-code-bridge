@@ -316,44 +316,44 @@
 
 ## Phase 6: Integration & Polish (Sequential)
 
-### P6-001: Integration Tests
+### P6-001: Integration Tests ✓
 - **Description**: Test the MCP server flow end-to-end (mocked PTY).
 - **Files**: `tests/integration/tools.test.ts`, `tests/integration/resources.test.ts`
 - **Acceptance Criteria**:
-  - [ ] `set_active_project` -> `list_files` flow.
-  - [ ] `start_task` -> `get_task_status` flow (using MockPty).
-  - [ ] `logs://` resource access.
+  - [x] `set_active_project` -> `list_files` flow.
+  - [x] `start_task` -> `get_task_status` flow (using MockPty).
+  - [x] `logs://` resource access.
 
-### P6-002: Live Smoke Test Script
+### P6-002: Live Smoke Test Script ✓
 - **Description**: Manual verification script using real node-pty.
 - **Files**: `scripts/test-live.ts`
 - **Acceptance Criteria**:
-  - [ ] Script prompts for input.
-  - [ ] Spawns real shell process.
-  - [ ] Logs output to console.
+  - [x] Script prompts for input.
+  - [x] Spawns real shell process.
+  - [x] Logs output to console.
 
-### P6-003: Setup Helpers
+### P6-003: Setup Helpers ✓
 - **Description**: Helper script for user configuration.
 - **Files**: `scripts/setup-config.ts`
 - **Acceptance Criteria**:
-  - [ ] Interactive CLI to generate `config.json`.
-  - [ ] Validates user inputs (paths exist).
+  - [x] Interactive CLI to generate `config.json`.
+  - [x] Validates user inputs (paths exist).
 
-### P6-004: Documentation & Licensing
+### P6-004: Documentation & Licensing ✓
 - **Description**: Finalize documentation.
 - **Files**: `README.md`, `LICENSE`
 - **Acceptance Criteria**:
-  - [ ] README matches Spec 17.12.
-  - [ ] Installation steps verified.
-  - [ ] MIT License added.
+  - [x] README matches Spec 17.12.
+  - [x] Installation steps verified.
+  - [x] MIT License added.
 
-### P6-005: Final Build
+### P6-005: Final Build ✓
 - **Description**: Verify production build.
 - **Files**: `dist/`
 - **Acceptance Criteria**:
-  - [ ] `npm run build` succeeds.
-  - [ ] `npm run typecheck` passes (no `any` leaks).
-  - [ ] `npm run test` passes (100% coverage on core paths).
+  - [x] `npm run build` succeeds.
+  - [x] `npm run typecheck` passes (no `any` leaks).
+  - [x] `npm run test` passes (100% coverage on core paths).
 
 ---
 

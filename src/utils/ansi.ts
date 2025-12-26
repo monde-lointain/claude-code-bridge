@@ -19,6 +19,7 @@ export function stripAnsi(str: string): string {
  * Check if a string contains ANSI escape codes.
  */
 export function hasAnsi(str: string): boolean {
+  // eslint-disable-next-line no-control-regex
   const ansiPattern = /[\u001B\u009B]/;
   return ansiPattern.test(str);
 }
