@@ -1,0 +1,10 @@
+export const MCP_SERVER_NAME = 'claude-code-bridge';
+export const MCP_SERVER_VERSION = '0.1.0';
+export const DEFAULT_TIMEOUT_SECONDS = 3600;
+export const DEFAULT_POLL_INTERVAL_MS = 5000;
+export const EXIT_CODE_SUCCESS = 0;
+export const EXIT_CODE_ERROR = 1;
+export const EXIT_CODE_USAGE = 2;
+export const EXIT_CODE_TASK_FAILED = 127;
+export const EXIT_CODE_INTERRUPTED = 130;
+//# sourceMappingURL=constants.js.map

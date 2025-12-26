@@ -6,12 +6,16 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "claude-code-bridge": "./dist/index.js"
+    "claude-code-bridge": "./dist/index.js",
+    "ccb": "./dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc -p tsconfig.cli.json",
+    "build:cli": "tsc -p tsconfig.cli.json",
     "dev": "tsx src/index.ts",
+    "cli": "tsx src/cli/index.ts",
     "test": "vitest",
+    "test:cli": "vitest run tests/cli",
     "test:coverage": "vitest --coverage",
     "test:live": "tsx scripts/test-live.ts",
     "typecheck": "tsc --noEmit",
@@ -23,8 +27,11 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
     "ignore": "^5.3.0",
     "node-pty": "^1.0.0",
+    "ora": "^9.0.0",
     "zod": "^3.22.0"
   },
   "devDependencies": {
