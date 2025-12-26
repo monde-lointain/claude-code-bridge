@@ -227,22 +227,22 @@
   - [x] Verify auto-approval triggers on mock patterns.
   - [x] Verify cleanup of old sessions.
 
-### P4-005: Task Manager (Lifecycle)
+### P4-005: Task Manager (Lifecycle) ✓
 - **Description**: Task creation, locking, and status tracking.
 - **Files**: `src/services/task-manager.ts` (Part 1)
 - **Acceptance Criteria**:
-  - [ ] `startTask`: Enforces "One task per project" lock.
-  - [ ] `writePromptFile`: Saves prompt to `.claude/mcp-logs/`.
-  - [ ] History ring buffer maintains `task_history_size`.
+  - [x] `startTask`: Enforces "One task per project" lock.
+  - [x] `writePromptFile`: Saves prompt to `.claude/mcp-logs/`.
+  - [x] History ring buffer maintains `task_history_size`.
 
-### P4-006: Task Manager (Integration)
+### P4-006: Task Manager (Integration) ✓
 - **Description**: Connect TaskManager to PtyManager.
 - **Files**: `src/services/task-manager.ts` (Part 2)
 - **Acceptance Criteria**:
-  - [ ] `startTask` calls `PtyManager.spawn`.
-  - [ ] Listen to PTY exit events to update Task status (`completed`/`failed`).
-  - [ ] Timeout logic: kills task if `timeout_seconds` exceeded.
-  - [ ] `getTaskStatus`: Generates user-friendly hints based on runtime.
+  - [x] `startTask` calls `PtyManager.spawn`.
+  - [x] Listen to PTY exit events to update Task status (`completed`/`failed`).
+  - [x] Timeout logic: kills task if `timeout_seconds` exceeded.
+  - [x] `getTaskStatus`: Generates user-friendly hints based on runtime.
 
 ### P4-007: Task Manager Tests
 - **Files**: `tests/unit/services/task-manager.test.ts`
