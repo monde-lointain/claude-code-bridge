@@ -196,13 +196,13 @@
 ## Phase 4: PTY & Task Management (Sequential)
 *Goal: The core orchestration engine. Must be sequential due to high complexity and internal dependencies.*
 
-### P4-001: Mock PTY
+### P4-001: Mock PTY ✓
 - **Description**: Create a robust mock for `node-pty` to allow testing without spawning real shells.
 - **Files**: `tests/mocks/mock-pty.ts`
 - **Acceptance Criteria**:
-  - [ ] Simulates data emission (`on('data')`).
-  - [ ] Simulates exit codes.
-  - [ ] Simulates input response (auto-approve logic test).
+  - [x] Simulates data emission (`on('data')`).
+  - [x] Simulates exit codes.
+  - [x] Simulates input response (auto-approve logic test).
 
 ### P4-002: PTY Manager (Core)
 - **Description**: Process spawning and output buffering.
