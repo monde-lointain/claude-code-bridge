@@ -220,12 +220,12 @@
   - [x] Auto-writes 'y\n' when pattern matches.
   - [x] ANSI stripping applied before buffer storage.
 
-### P4-004: PTY Manager Tests
+### P4-004: PTY Manager Tests ✓
 - **Files**: `tests/unit/services/pty-manager.test.ts`
 - **Acceptance Criteria**:
-  - [ ] Verify output capturing.
-  - [ ] Verify auto-approval triggers on mock patterns.
-  - [ ] Verify cleanup of old sessions.
+  - [x] Verify output capturing.
+  - [x] Verify auto-approval triggers on mock patterns.
+  - [x] Verify cleanup of old sessions.
 
 ### P4-005: Task Manager (Lifecycle)
 - **Description**: Task creation, locking, and status tracking.
