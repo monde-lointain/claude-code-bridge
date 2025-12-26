@@ -204,21 +204,21 @@
   - [x] Simulates exit codes.
   - [x] Simulates input response (auto-approve logic test).
 
-### P4-002: PTY Manager (Core)
+### P4-002: PTY Manager (Core) ✓
 - **Description**: Process spawning and output buffering.
 - **Files**: `src/services/pty-manager.ts` (Part 1)
 - **Acceptance Criteria**:
-  - [ ] `spawn`: Launches process with correct env (`TERM`, `CI`).
-  - [ ] Output piped to file stream and memory buffer.
-  - [ ] `kill`: Implements graceful SIGTERM -> SIGKILL escalation.
+  - [x] `spawn`: Launches process with correct env (`TERM`, `CI`).
+  - [x] Output piped to file stream and memory buffer.
+  - [x] `kill`: Implements graceful SIGTERM -> SIGKILL escalation.
 
-### P4-003: PTY Manager (Interaction)
+### P4-003: PTY Manager (Interaction) ✓
 - **Description**: Expect-send logic for auto-approvals.
 - **Files**: `src/services/pty-manager.ts` (Part 2)
 - **Acceptance Criteria**:
-  - [ ] Regex matching against `auto_approve_patterns`.
-  - [ ] Auto-writes 'y\n' when pattern matches.
-  - [ ] ANSI stripping applied before buffer storage.
+  - [x] Regex matching against `auto_approve_patterns`.
+  - [x] Auto-writes 'y\n' when pattern matches.
+  - [x] ANSI stripping applied before buffer storage.
 
 ### P4-004: PTY Manager Tests
 - **Files**: `tests/unit/services/pty-manager.test.ts`
